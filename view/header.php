@@ -16,6 +16,7 @@
     	<ul class="nav navbar-nav">
     		<?php // show public or private links depending on whether the user has been authenticated
     		if (!empty($_SESSION['user_id'])) { ?>
+          <li><a href="../view/edit.php" title="Edit Profile">Edit Profile</a></li>
     			<li><a href="../view/logout.php" title="Logout">Logout</a></li>
     		<?php
     		}

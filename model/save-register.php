@@ -35,7 +35,7 @@ if ($ok) {
     require_once ('db.php');
 
     // set up the sql insert
-    $sql = "INSERT INTO profiles (user_name, user-email, password) VALUES (:user_name, :user_email, :password)";
+    $sql = "INSERT INTO profiles (user_name, user_email, password) VALUES (:user_name, :user_email, :password)";
 
     // hash the password
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
